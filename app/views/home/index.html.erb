@@ -14,8 +14,8 @@
 <%# error handling %>
 <%# to display if @stock instance has value %>
 <% if @stock %>
-    <%= @stock.company_name %><br/>
-    $<%= @stock.latest_price %><br/> 
+    Company Name: <%= @stock.company_name %><br/>
+    Latest Price: $<%= @stock.latest_price %><br/>
 <% elsif @empty_error_msg %>
     <%= @empty_error_msg %>
 <% end %>
